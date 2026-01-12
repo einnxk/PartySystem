@@ -1,0 +1,8 @@
+# Project exclude paths
+/.gradle/
+/build/
+/PartyRestAPI/build/
+/PartyRestAPI/build/classes/java/main/
+/PartyRestAPI/build/classes/java/test/
+/TypeContainer/build/
+/TypeContainer/build/classes/java/main/

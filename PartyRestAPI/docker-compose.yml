@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  party-rest-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+    environment:
+      - SPRING_REDIS_HOST=redis
+      - SPRING_REDIS_PORT=6379
+
+  redis:
+    image: redis:6-alpine
+    ports:
+      - "6379:6379"

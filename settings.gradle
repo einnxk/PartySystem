@@ -1,0 +1,6 @@
+rootProject.name = 'Party'
+
+include 'TypeContainer'
+include 'PartyRestAPI'
+include 'Paper'
+include 'Velocity'
