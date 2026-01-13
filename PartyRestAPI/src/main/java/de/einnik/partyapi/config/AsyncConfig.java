@@ -1,4 +1,4 @@
-package de.einnik.partyapi;
+package de.einnik.partyapi.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

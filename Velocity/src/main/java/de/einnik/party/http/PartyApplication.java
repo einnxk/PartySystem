@@ -29,6 +29,7 @@ public class PartyApplication {
     public CompletableFuture<PartyResponse> getPartyByPlayer(@NotNull UUID playerUuid) {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(baseUrl + "/party-get/" + playerUuid))
+                .header("api-key", "123") // Key is normally of course not 123
                 .GET()
                 .build();
 
@@ -42,6 +43,7 @@ public class PartyApplication {
     public CompletableFuture<CreateResponse> createPartyForPlayer(@NotNull UUID playerUuid, int maxMembers) {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(baseUrl + "/party-create/" + playerUuid + "/" + maxMembers))
+                .header("api-key", "123") // Key is normally of course not 123
                 .GET()
                 .build();
 
@@ -55,6 +57,7 @@ public class PartyApplication {
     public CompletableFuture<DestroyResponse> destroyPartyByPlayer(@NotNull UUID playerUuid) {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(baseUrl + "/party-destroy/" + playerUuid))
+                .header("api-key", "123") // Key is normally of course not 123
                 .GET()
                 .build();
 
@@ -69,6 +72,7 @@ public class PartyApplication {
     public CompletableFuture<LeaveResponse> leavePartyByPlayer(@NotNull UUID playerUuid) {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(baseUrl + "/party-edit/leave/" + playerUuid))
+                .header("api-key", "123") // Key is normally of course not 123
                 .GET()
                 .build();
 
@@ -82,6 +86,7 @@ public class PartyApplication {
     public CompletableFuture<JoinResponse> joinPartyForPlayer(@NotNull UUID playerUuid, @NotNull UUID partyID) {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(baseUrl + "/party-edit/join/" + partyID + "/" + playerUuid))
+                .header("api-key", "123") // Key is normally of course not 123
                 .GET()
                 .build();
 

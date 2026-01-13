@@ -3,6 +3,7 @@ package de.einnik.partyapi;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 /**
  * Spring Application, the Main class of the Project
@@ -11,6 +12,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
  * with Controllers and Services asynchronously
  */
 @EnableAsync
+@EnableWebSecurity
 @SpringBootApplication
 public class PartyRestApiApplication {
 
