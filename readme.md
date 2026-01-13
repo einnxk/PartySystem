@@ -13,6 +13,7 @@ Ebenfalls ist ein Velocity Teil enthalten in dem die Http-Request von der andere
 - Rest-API (Spring Boot)
 - Redis-Datenbank (State & Pub/Sub)
 - Stateless Service
+- Web-Security mit API Key
 - Velocity Adapter
 
 ---
