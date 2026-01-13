@@ -19,6 +19,11 @@ import lombok.Getter;
 import net.kyori.adventure.text.Component;
 import org.slf4j.Logger;
 
+/**
+ * Main Class of the Velocity Party Adapter,
+ * this is a demonstration the Back-End API
+ * is usable
+ */
 @Plugin(
     id = "party",
     name = "party",
@@ -62,6 +67,9 @@ public class Party {
         cache.clear();
     }
 
+    /**
+     * Util Method for registering the Velocity Listeners
+     */
     private void initializeListeners(){
         proxy.getEventManager().register(this, new ServerSwitchListener(proxy));
         proxy.getEventManager().register(this, new ProxyQuitListener(proxy));

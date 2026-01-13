@@ -6,16 +6,14 @@ Partysystem Back-End für Minecraft Server. Benutzt wird hierfür Spring Boot mi
 Ebenfalls ist ein Velocity Teil enthalten in dem die Http-Request von der anderen Seite gezeigt werden. 
 
 > ### ⚠️ Wichtige Information
-> Dies ist ein Portfolio Projekt und ist daher möglicherweise nicht vollkommen funktional. Daher ist das Projekt nicht für den Einsatz auf Servern gedacht und sollte nicht so genutzt werden. Da unter anderem die Sicherheit der Requests ignoriert wurde. Der 
-> Hauptfokus liegt allerdings auf dem Back-End, also dem Spring-Boot Modul.
+> Dies ist ein Portfolio Projekt, daher liegt der Fokus auf der Architektur, Skalierung, Sicherheitsaspekte sind hier nicht vertreten.
 
 ## Features
 
-- DatenSpeicherung in Redis-Datenbank, dadurch eine super schnelle Reaktionszeit auf Anfragen
-- Lua Script zu schnelleren Anfragen über Redis
-- Übersichtliche Ordner Struktur, mit Spring Boot 
-- Requests, sowie Abfragen sind vollkommen Asynchron
-- Vereinfachter Velocity Adapter
+- Rest-API (Spring Boot)
+- Redis-Datenbank (State & Pub/Sub)
+- Stateless Service
+- Velocity Adapter
 
 ---
 ## Deployment mit Docker (PartyRestAPI)
@@ -43,4 +41,4 @@ Docker, sowie Docker-Compose sind auf dem Server installiert.
     ```
 
 Die Back-End Anwendung ist jetzt unter `http://localhost:8080` verfügbar.
-<br>Das Velocity Plugin muss noch in den Plugins Ordner, bzw. Templates Ordner gezogen werden. 
+<br>Das Velocity Plugin muss noch in den Plugins Ordner, bzw. Templates Ordner gezogen werden.
