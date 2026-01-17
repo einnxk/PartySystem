@@ -6,7 +6,7 @@ Partysystem Back-End für Minecraft Server. Benutzt wird hierfür Spring Boot mi
 Ebenfalls ist ein Velocity Teil enthalten in dem die Http-Request von der anderen Seite gezeigt werden. 
 
 > ### ⚠️ Wichtige Information
-> Dies ist ein Portfolio Projekt, daher liegt der Fokus auf der Architektur, Skalierung, Sicherheitsaspekte sind hier nicht vertreten.
+> Dies ist ein Portfolio Projekt, daher liegt der Fokus auf der Architektur, Skalierung, Sicherheitsaspekte sind hier vereinfacht vertreten.
 
 ## Features
 
